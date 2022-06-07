@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-bottom: 1rem; }
+    .attribution a { color: lightgrey; ; }
+  </style>
+</head>
+
+<body>
+
+  <div id="score">
+    <div>
+      <ul>
+        <li>ROCK</li>
+        <li>PAPER</li>
+        <li>SCISSORS</li>
+        <li>SPOCK</li>
+        <li>LIZARD</li>
+        
+      </ul>
+    </div>
+
+    <div id="scoreBox">
+      <span>SCORE</span>
+      <span id="winCount">00</span>
+    </div>
+  </div>
+
+  <main>
+
+      <div id="container">
+        <div class="pentagon"><img src="./images/bg-pentagon.svg" alt="image-of-a-pentagon"></div>
+        <div class="selection rock" ><img src="./images/icon-rock.svg" alt=""></div>
+        <div class="selection paper" ><img src="./images/icon-paper.svg" alt=""></div>
+        <div class="selection scissors" ><img src="./images/icon-scissors.svg" alt=""></div>
+        <div class="selection spock" ><img src="./images/icon-spock.svg" alt=""></div>
+        <div class="selection lizard" ><img src="./images/icon-lizard.svg" alt=""></div>
+      </div>
+     
+  </main>
+
+
+  <div id="move">
+    
+    <div id="left">
+      <div class="selection paper"><img src="./images/icon-paper.svg" alt="" srcset=""></div>
+      <span>YOU PICKED</span>
+    </div>
+    <div id="right">
+      <div class="selection rock"><img src="./images/icon-rock.svg" alt="" srcset=""></div>
+      <span>THE HOUSE PICKED</span>
+    </div>
+
+  </div>
+
+  <div id="result">
+    <span>YOU WIN</span>
+    <button type="button">PLAY AGAIN</button>
+  </div>
+
+<div id="rulesDetails">
+  <div>
+    <aside>RULES</aside>
+    <input type="image" src="./images/icon-close.svg" alt="">
+  </div>
+  <img src="./images/image-rules-bonus.svg" alt="rules-image">
+</div>
+
+  <div id="rules">
+    
+    <button type="button">RULES</button>
+  </div>
+
+
+  
+  <div class="attribution">
+    <!-- Made by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  -->
+    Created by <a href="">Nishant Dwivedi</a>.
+  </div>
+
+</body>
+</html>
