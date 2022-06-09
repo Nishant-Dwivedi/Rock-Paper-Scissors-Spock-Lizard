@@ -71,6 +71,9 @@ for (let i = 0; i < options.length; i++) {
                 
                 case "lost":
                     resultDisplay.children[0].innerText = "YOU LOST";
+                    if (score != 0){
+                        score--;
+                    } 
                     break;
                 
                 case "tie":

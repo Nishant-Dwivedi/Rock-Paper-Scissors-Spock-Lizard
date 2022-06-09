@@ -57,7 +57,7 @@ body {
     margin: 1rem 2rem;
     border: 3px solid gray;
     border-radius: 7.5px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
     margin-inline: 10%;
 }
 
@@ -86,18 +86,16 @@ body {
 /* MAIN */
 
 main {
-
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7.5% 0;
-    margin-bottom: 2rem;
+    padding: 5rem 0;
+    margin-bottom: 5.5rem;
     
 }
 
-main>img {
-    position: relative;
-}
+
 
 #container {
     position: relative;
@@ -136,9 +134,9 @@ main>img {
 
 
 .scissors {
-
-    top: -17%;
-    left: 32.5%;
+    /* opacity: .10; */
+    top: -16.5%;
+    left: 30.9%;
     border: 10px solid #ea9c13;
 }
 
@@ -152,19 +150,19 @@ main>img {
 
 .paper {
     top: 16%;
-    right: -14.5%;
+    right: -12.5%;
     border: 10px solid #4666f3;
 }
 
 .lizard {
-
+    left: 3.25%;
     bottom: -13.5%;
     border: 10px solid #754bde;
 }
 
 .rock {
 
-    right: 03%;
+    right: 03.25%;
     bottom: -13.5%;
     border: 10px solid #e03b58;
 }
@@ -274,7 +272,7 @@ main>img {
 /* RUles BUtton */
 
 #rules {
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
     display: flex;
@@ -304,11 +302,11 @@ main>img {
 
 
     .selection {
-        transform: scale(1.20);
+        transform: scale(1.05);
     }
 
     .selection:hover {
-        transform: scale(1.25);
+        transform: scale(1.10);
     }
 
     #rules {
@@ -317,4 +315,61 @@ main>img {
 
     
 
+}
+
+@media screen  and (max-width: 440px){
+    
+
+    .pentagon img {
+        transform: scale(.9);
+    }
+
+    .selection {
+        transform: scale(.9);
+    }
+
+    .scissors {
+        /* opacity: .25; */
+        top: -10.75%;
+        left: 31.95%;
+        
+    }
+    
+    .spock {
+        /* opacity: .35; */
+        left: -9.25%;
+        top: 17.75%;
+        
+    
+    }
+    
+    
+    .paper {
+        /* opacity: .25; */
+        top: 17.75%;
+        right: -9.25%;
+        
+    }
+    
+    .lizard {
+        /* opacity: .35; */
+        bottom: -8.5%;
+        left: 3.25%;
+        
+
+    }
+    
+    .rock {
+        /* opacity: .35; */
+        right: 03.25%;
+        bottom: -8.5%;
+        
+    }
+
+    #left>span,
+#right>span {
+    font-weight: 500;
+    font-size: small;
+    
+}
 }

@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Screenshots
 
-![](./Screenshot_2022-06-07_21-20-13.png)
-![](./Screenshot_2022-06-07_21-22-39.png)
+![](./mobile.png)
+![](./desktop.png)
 
 ### Built with
 
