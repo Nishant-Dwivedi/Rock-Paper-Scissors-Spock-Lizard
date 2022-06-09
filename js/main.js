@@ -36,17 +36,20 @@ const winsAgainst = {
 // MAIN
 
 let computerChoice;
+let playerSelection;
 
 for (let i = 0; i < options.length; i++) {
     options[i].addEventListener('click', () => {
         // assign playerSelection variable a value and declare computerChoice
 
-        let playerSelection = options[i].classList[2];
+         playerSelection = options[i].classList[2];
         
 
         //  update image source in "#move"
         playerMove.setAttribute('src', `./images/icon-${playerSelection}.svg`);
+        
         playerMove.parentElement.classList.add(`${playerSelection}`);
+        
 
         // hide main and show rule
         main[0].style.display = 'none';
@@ -100,6 +103,10 @@ resultDisplay.children[1].addEventListener('click', () => {
     // reset computerChoice else it shows the previous choice during setTimeout
     computerMove.setAttribute('src', ``);
     computerMove.parentElement.classList.remove(`${computerChoice}`);
+    
+    
+    playerMove.parentElement.classList.remove(`${playerSelection}`);
+    
 })
 
 
